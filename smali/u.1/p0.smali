@@ -1,0 +1,11 @@
+.class public interface abstract Lu/p0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a()LB5/l;
+.end method
+
+.method public abstract b()LB5/l;
+.end method

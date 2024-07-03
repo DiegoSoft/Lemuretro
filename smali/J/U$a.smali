@@ -1,0 +1,263 @@
+.class final LJ/U$a;
+.super LC5/r;
+.source "SourceFile"
+
+# interfaces
+.implements LB5/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = LJ/U;->a(ZILB5/p;LB5/q;LB5/p;LB5/p;Lz/T;LB5/p;LR/m;I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic m:LB5/p;
+
+.field final synthetic n:LB5/p;
+
+.field final synthetic o:LB5/p;
+
+.field final synthetic p:I
+
+.field final synthetic q:Z
+
+.field final synthetic r:Lz/T;
+
+.field final synthetic s:LB5/p;
+
+.field final synthetic t:LB5/q;
+
+
+# direct methods
+.method constructor <init>(LB5/p;LB5/p;LB5/p;IZLz/T;LB5/p;LB5/q;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LJ/U$a;->m:LB5/p;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, LJ/U$a;->n:LB5/p;
+
+    .line 4
+    .line 5
+    iput-object p3, p0, LJ/U$a;->o:LB5/p;
+
+    .line 6
+    .line 7
+    iput p4, p0, LJ/U$a;->p:I
+
+    .line 8
+    .line 9
+    iput-boolean p5, p0, LJ/U$a;->q:Z
+
+    .line 10
+    .line 11
+    iput-object p6, p0, LJ/U$a;->r:Lz/T;
+
+    .line 12
+    .line 13
+    iput-object p7, p0, LJ/U$a;->s:LB5/p;
+
+    .line 14
+    .line 15
+    iput-object p8, p0, LJ/U$a;->t:LB5/q;
+
+    .line 16
+    .line 17
+    const/4 p1, 0x2
+
+    .line 18
+    invoke-direct {p0, p1}, LC5/r;-><init>(I)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lw0/k0;J)Lw0/H;
+    .locals 18
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    invoke-static/range {p2 .. p3}, LR0/b;->n(J)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v15
+
+    .line 7
+    invoke-static/range {p2 .. p3}, LR0/b;->m(J)I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v16
+
+    .line 11
+    const/16 v7, 0xa
+
+    .line 12
+    .line 13
+    const/4 v8, 0x0
+
+    .line 14
+    const/4 v3, 0x0
+
+    .line 15
+    const/4 v4, 0x0
+
+    .line 16
+    const/4 v5, 0x0
+
+    .line 17
+    const/4 v6, 0x0
+
+    .line 18
+    move-wide/from16 v1, p2
+
+    .line 19
+    .line 20
+    invoke-static/range {v1 .. v8}, LR0/b;->e(JIIIIILjava/lang/Object;)J
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-wide v11
+
+    .line 24
+    new-instance v17, LJ/U$a$a;
+
+    .line 25
+    .line 26
+    iget-object v3, v0, LJ/U$a;->m:LB5/p;
+
+    .line 27
+    .line 28
+    iget-object v4, v0, LJ/U$a;->n:LB5/p;
+
+    .line 29
+    .line 30
+    iget-object v5, v0, LJ/U$a;->o:LB5/p;
+
+    .line 31
+    .line 32
+    iget v6, v0, LJ/U$a;->p:I
+
+    .line 33
+    .line 34
+    iget-boolean v8, v0, LJ/U$a;->q:Z
+
+    .line 35
+    .line 36
+    iget-object v9, v0, LJ/U$a;->r:Lz/T;
+
+    .line 37
+    .line 38
+    iget-object v13, v0, LJ/U$a;->s:LB5/p;
+
+    .line 39
+    .line 40
+    iget-object v14, v0, LJ/U$a;->t:LB5/q;
+
+    .line 41
+    .line 42
+    move-object/from16 v1, v17
+
+    .line 43
+    .line 44
+    move-object/from16 v2, p1
+
+    .line 45
+    .line 46
+    move v7, v15
+
+    .line 47
+    move/from16 v10, v16
+
+    .line 48
+    .line 49
+    invoke-direct/range {v1 .. v14}, LJ/U$a$a;-><init>(Lw0/k0;LB5/p;LB5/p;LB5/p;IIZLz/T;IJLB5/p;LB5/q;)V
+
+    .line 50
+    .line 51
+    .line 52
+    const/4 v6, 0x4
+
+    .line 53
+    const/4 v7, 0x0
+
+    .line 54
+    const/4 v4, 0x0
+
+    .line 55
+    move-object/from16 v1, p1
+
+    .line 56
+    .line 57
+    move v2, v15
+
+    .line 58
+    move/from16 v3, v16
+
+    .line 59
+    .line 60
+    move-object/from16 v5, v17
+
+    .line 61
+    .line 62
+    invoke-static/range {v1 .. v7}, Lw0/I;->a(Lw0/J;IILjava/util/Map;LB5/l;ILjava/lang/Object;)Lw0/H;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v1
+
+    .line 66
+    return-object v1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    check-cast p1, Lw0/k0;
+
+    .line 2
+    .line 3
+    check-cast p2, LR0/b;
+
+    .line 4
+    .line 5
+    invoke-virtual {p2}, LR0/b;->t()J
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v0
+
+    .line 9
+    invoke-virtual {p0, p1, v0, v1}, LJ/U$a;->a(Lw0/k0;J)Lw0/H;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    return-object p1
+.end method

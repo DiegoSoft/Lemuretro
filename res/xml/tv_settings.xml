@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/settings_category_general" app:iconSpaceReserved="false">
+        <SwitchPreference android:title="@string/settings_title_enable_autosave" android:key="@string/pref_key_autosave" android:defaultValue="true" app:iconSpaceReserved="false" />
+        <SwitchPreference android:title="@string/settings_title_hd_mode" android:key="@string/pref_key_hd_mode" android:summary="@string/settings_description_hd_mode" android:defaultValue="false" app:disableDependentsState="true" app:iconSpaceReserved="false" />
+        <ListPreference android:entries="@array/pref_key_shader_filter_display_names" android:title="@string/display_filter" android:key="@string/pref_key_shader_filter" android:defaultValue="auto" app:dependency="@string/pref_key_hd_mode" app:entryValues="@array/pref_key_shader_filter_values" app:iconSpaceReserved="false" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_category_input" app:iconSpaceReserved="false">
+        <PreferenceScreen android:title="@string/settings_title_gamepad_settings" android:key="@string/pref_key_open_gamepad_settings" android:summary="@string/settings_description_gamepad_settings" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_category_misc" app:iconSpaceReserved="false">
+        <PreferenceScreen android:title="@string/settings_title_save_sync" android:key="@string/pref_key_open_save_sync_settings" app:iconSpaceReserved="false" app:summary="@string/settings_description_save_sync" />
+        <PreferenceScreen android:title="@string/settings_title_open_cores_selection" android:key="@string/pref_key_open_cores_selection" app:iconSpaceReserved="false" app:summary="@string/settings_description_open_cores_selection" />
+        <PreferenceScreen android:title="@string/settings_title_display_bios_info" android:key="@string/pref_key_display_bios_info" app:iconSpaceReserved="false" app:summary="@string/settings_description_display_bios_info" />
+        <PreferenceScreen android:title="@string/settings_title_advanced_settings" android:key="@string/pref_key_advanced_settings" android:summary="@string/settings_description_advanced_settings" app:iconSpaceReserved="false">
+            <PreferenceCategory android:title="@string/settings_category_input" app:iconSpaceReserved="false">
+                <SwitchPreference android:title="@string/settings_title_enable_rumble" android:key="@string/pref_key_enable_rumble" android:summary="@string/settings_description_enable_rumble" android:defaultValue="false" app:iconSpaceReserved="false" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/settings_category_general" app:iconSpaceReserved="false">
+                <SwitchPreference android:title="@string/settings_title_low_latency_audio" android:key="@string/pref_key_low_latency_audio" android:summary="@string/settings_description_low_latency_audio" android:defaultValue="false" app:iconSpaceReserved="false" />
+                <ListPreference android:title="@string/settings_title_maximum_cache_usage" android:key="@string/pref_key_max_cache_size" app:iconSpaceReserved="false" />
+                <SwitchPreference android:title="@string/settings_title_direct_game_load" android:key="@string/pref_key_allow_direct_game_load" android:summary="@string/settings_description_direct_game_load" android:defaultValue="true" app:iconSpaceReserved="false" />
+                <SwitchPreference android:title="@string/settings_title_legacy_hd_mode" android:key="@string/pref_key_legacy_hd_mode" android:summary="@string/settings_description_legacy_hd_mode" android:defaultValue="false" app:iconSpaceReserved="false" />
+                <Preference android:title="@string/settings_title_reset_settings" android:key="@string/pref_key_reset_settings" app:iconSpaceReserved="false" app:summary="@string/settings_description_reset_settings" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

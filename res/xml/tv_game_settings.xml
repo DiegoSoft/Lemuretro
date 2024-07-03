@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/game_menu_title"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceScreen android:title="@string/game_menu_save" android:key="pref_game_section_save" app:icon="@drawable/ic_menu_save" />
+    <PreferenceScreen android:title="@string/game_menu_load" android:key="pref_game_section_load" app:icon="@drawable/ic_menu_load" />
+    <Preference android:title="@string/game_menu_quit" android:key="pref_game_quit" app:icon="@drawable/ic_menu_quit" />
+    <Preference android:title="@string/game_menu_restart" android:key="pref_game_reset" app:icon="@drawable/ic_menu_restart" />
+    <SwitchPreference android:title="@string/game_menu_mute_audio" android:key="pref_game_mute" app:icon="@drawable/ic_menu_mute" />
+    <SwitchPreference android:title="@string/game_menu_fast_forward" android:key="pref_game_fast_forward" app:icon="@drawable/ic_menu_fast_forward" />
+    <ListPreference android:title="@string/game_menu_change_disk_button" android:key="pref_game_section_change_disk" app:icon="@drawable/ic_menu_disk" app:isPreferenceVisible="false" />
+    <PreferenceScreen android:title="@string/game_menu_settings" android:key="pref_game_section_core_options" app:icon="@drawable/ic_menu_settings" />
+</PreferenceScreen>

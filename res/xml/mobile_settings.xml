@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/roms" app:iconSpaceReserved="false">
+        <Preference android:title="@string/directory" android:key="@string/pref_key_extenral_folder" app:iconSpaceReserved="false" app:summary="@string/none" app:useSimpleSummaryProvider="true" />
+        <Preference android:persistent="false" android:title="@string/rescan" android:key="@string/pref_key_rescan" app:iconSpaceReserved="false" />
+        <Preference android:persistent="false" android:title="@string/stop" android:key="@string/pref_key_stop_rescan" app:iconSpaceReserved="false" app:isPreferenceVisible="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_category_general" app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat android:title="@string/settings_title_enable_autosave" android:key="@string/pref_key_autosave" android:defaultValue="true" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat android:title="@string/settings_title_hd_mode" android:key="@string/pref_key_hd_mode" android:summary="@string/settings_description_hd_mode" android:defaultValue="false" app:disableDependentsState="true" app:iconSpaceReserved="false" />
+        <ListPreference android:entries="@array/pref_key_shader_filter_display_names" android:title="@string/display_filter" android:key="@string/pref_key_shader_filter" android:dependency="@string/pref_key_hd_mode" android:defaultValue="auto" android:entryValues="@array/pref_key_shader_filter_values" app:iconSpaceReserved="false" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_category_input" app:iconSpaceReserved="false">
+        <ListPreference android:entries="@array/pref_key_haptic_feedback_mode_display_names" android:title="@string/settings_title_enable_touch_feedback" android:key="@string/pref_key_haptic_feedback_mode" android:defaultValue="press" android:entryValues="@array/pref_key_haptic_feedback_mode_values" app:iconSpaceReserved="false" app:useSimpleSummaryProvider="true" />
+        <Preference android:persistent="false" android:title="@string/settings_title_gamepad_settings" android:key="@string/pref_key_open_gamepad_settings" android:summary="@string/settings_description_gamepad_settings" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_category_misc" app:iconSpaceReserved="false">
+        <Preference android:title="@string/settings_title_save_sync" android:key="@string/pref_key_open_save_sync_settings" android:summary="@string/settings_description_save_sync" app:iconSpaceReserved="false" />
+        <Preference android:persistent="false" android:title="@string/settings_title_open_cores_selection" android:key="@string/pref_key_open_cores_selection" app:iconSpaceReserved="false" app:summary="@string/settings_description_open_cores_selection" />
+        <Preference android:persistent="false" android:title="@string/settings_title_display_bios_info" android:key="@string/pref_key_display_bios_info" app:iconSpaceReserved="false" app:summary="@string/settings_description_display_bios_info" />
+        <Preference android:persistent="false" android:title="@string/settings_title_advanced_settings" android:key="@string/pref_key_advanced_settings" android:summary="@string/settings_description_advanced_settings" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

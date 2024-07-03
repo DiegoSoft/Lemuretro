@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/settings_category_input" app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat android:title="@string/settings_title_enable_rumble" android:key="@string/pref_key_enable_rumble" android:summary="@string/settings_description_enable_rumble" android:defaultValue="false" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat android:title="@string/settings_title_enable_device_rumble" android:key="@string/pref_key_enable_device_rumble" android:summary="@string/settings_description_enable_device_rumble" android:dependency="@string/pref_key_enable_rumble" android:defaultValue="false" app:iconSpaceReserved="false" />
+        <SeekBarPreference android:max="10" android:title="@string/settings_title_tilt_sensitivity" android:key="@string/pref_key_tilt_sensitivity_index" android:defaultValue="6" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_category_general" app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat android:title="@string/settings_title_low_latency_audio" android:key="@string/pref_key_low_latency_audio" android:summary="@string/settings_description_low_latency_audio" android:defaultValue="false" app:iconSpaceReserved="false" />
+        <ListPreference android:title="@string/settings_title_maximum_cache_usage" android:key="@string/pref_key_max_cache_size" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat android:title="@string/settings_title_direct_game_load" android:key="@string/pref_key_allow_direct_game_load" android:summary="@string/settings_description_direct_game_load" android:defaultValue="true" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat android:title="@string/settings_title_legacy_hd_mode" android:key="@string/pref_key_legacy_hd_mode" android:summary="@string/settings_description_legacy_hd_mode" android:defaultValue="false" app:iconSpaceReserved="false" />
+        <Preference android:persistent="false" android:title="@string/settings_title_reset_settings" android:key="@string/pref_key_reset_settings" app:iconSpaceReserved="false" app:summary="@string/settings_description_reset_settings" />
+    </PreferenceCategory>
+</PreferenceScreen>
